@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bClick"
+        android:layout_width="286dp"
+        android:layout_height="132dp"
+        android:text="Click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvClicks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Hello World!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bXtraFinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Buy Xtra Finger"
+        app:layout_constraintEnd_toStartOf="@+id/tvXtraFinger"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bClick" />
+
+    <Button
+        android:id="@+id/bAutoClicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Buy Auto Clicker"
+        app:layout_constraintEnd_toStartOf="@+id/tvAutoClicker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bXtraFinger" />
+
+    <TextView
+        android:id="@+id/tvXtraFinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xtra Fingers: 0"
+        app:layout_constraintBottom_toBottomOf="@+id/bXtraFinger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bXtraFinger"
+        app:layout_constraintTop_toTopOf="@+id/bXtraFinger" />
+
+    <TextView
+        android:id="@+id/tvAutoClicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto Clickers: 0"
+        app:layout_constraintBottom_toBottomOf="@+id/bAutoClicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bAutoClicker"
+        app:layout_constraintTop_toTopOf="@+id/bAutoClicker" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
